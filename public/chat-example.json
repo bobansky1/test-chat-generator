@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "title": "Моя переписка",
+  "chat": { "name": "Александра", "status": "в сети", "avatar": "avatar.jpg", "verified": false, "backCount": "12" },
+  "screen": { "time": "9:41", "battery": 85, "network": "wifi", "signal": 4, "charging": false, "theme": "light", "wallpaper": "mint", "island": true, "height": 852 },
+  "messages": [
+    { "type": "date", "text": "13 октября" },
+    { "sender": "other", "text": "Привет! Как дела?", "time": "10:24" },
+    { "sender": "me", "text": "Отлично! Вот фото 🌿", "time": "10:25", "status": "read" },
+    { "sender": "me", "type": "photo", "image": "photo.jpg", "text": "Наше любимое место", "time": "10:26", "status": "read" }
+  ]
+}

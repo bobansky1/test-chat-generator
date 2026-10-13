@@ -1,0 +1,4 @@
+import type { Project } from './model';
+function database():Promise<IDBDatabase> {return new Promise((resolve,reject)=>{const req=indexedDB.open('chat-studio',1);req.onupgradeneeded=()=>req.result.createObjectStore('projects');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}
+export async function readProject():Promise<Project|undefined> {const db=await database();return new Promise((resolve,reject)=>{const tx=db.transaction('projects','readonly');const req=tx.objectStore('projects').get('current');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);tx.oncomplete=()=>db.close();});}
+export async function saveProject(project:Project){const db=await database();return new Promise<void>((resolve,reject)=>{const tx=db.transaction('projects','readwrite');tx.objectStore('projects').put(project,'current');tx.oncomplete=()=>{db.close();resolve();};tx.onerror=()=>{db.close();reject(tx.error);};});}

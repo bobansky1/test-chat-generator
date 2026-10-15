@@ -1,0 +1,5 @@
+[
+ {"id":"single","name":"Одна история","price":100,"duration":0,"downloads":1,"label":"1 скачивание","description":"Для одного готового диалога"},
+ {"id":"day","name":"Творческий день","price":1500,"duration":86400000,"downloads":null,"label":"24 часа безлимита","description":"Когда идей больше, чем одна"},
+ {"id":"month","name":"Целый месяц","price":3000,"duration":2592000000,"downloads":null,"label":"30 дней безлимита","description":"Для регулярного создания контента"}
+]

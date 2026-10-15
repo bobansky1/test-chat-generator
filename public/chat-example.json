@@ -1,12 +1,83 @@
 {
   "version": 1,
   "title": "Моя переписка",
-  "chat": { "name": "Александра", "status": "в сети", "avatar": "avatar.jpg", "verified": false, "backCount": "12" },
-  "screen": { "time": "9:41", "battery": 85, "network": "wifi", "signal": 4, "charging": false, "theme": "light", "wallpaper": "mint", "island": true, "height": 852 },
+  "chat": {
+    "name": "Александра",
+    "status": "в сети",
+    "avatar": "avatar.jpg",
+    "verified": false,
+    "backCount": "12",
+    "pinned": "Встреча в субботу"
+  },
+  "screen": {
+    "time": "9:41",
+    "battery": 85,
+    "network": "wifi",
+    "signal": 4,
+    "charging": false,
+    "muted": false,
+    "theme": "light",
+    "wallpaper": "mint",
+    "wallpaperImage": "",
+    "composerText": "Message",
+    "island": true,
+    "height": 852,
+    "outgoingGradient": {
+      "start": "#8ef0a4",
+      "end": "#a9d8e5",
+      "text": "#183c32",
+      "angle": 135
+    }
+  },
   "messages": [
-    { "type": "date", "text": "13 октября" },
-    { "sender": "other", "text": "Привет! Как дела?", "time": "10:24" },
-    { "sender": "me", "text": "Отлично! Вот фото 🌿", "time": "10:25", "status": "read" },
-    { "sender": "me", "type": "photo", "image": "photo.jpg", "text": "Наше любимое место", "time": "10:26", "status": "read" }
-  ]
+    {
+      "type": "date",
+      "text": "13 октября"
+    },
+    {
+      "type": "text",
+      "sender": "other",
+      "text": "Привет! **Как дела?**",
+      "time": "10:24"
+    },
+    {
+      "type": "text",
+      "sender": "me",
+      "text": "*Отлично!* __До встречи__. >>>Возьми кофе>>> Код: ||1234||",
+      "time": "10:25",
+      "status": "read"
+    },
+    {
+      "type": "photo",
+      "sender": "me",
+      "image": "photo.jpg",
+      "text": "Наше любимое место 🌿",
+      "time": "10:26",
+      "status": "read"
+    },
+    {
+      "type": "voice",
+      "sender": "other",
+      "text": "",
+      "duration": "0:12",
+      "time": "10:27"
+    },
+    {
+      "type": "emoji",
+      "sender": "me",
+      "text": "👍",
+      "time": "10:28",
+      "status": "read"
+    },
+    {
+      "type": "round",
+      "sender": "me",
+      "image": "photo.jpg",
+      "text": "",
+      "duration": "0:03",
+      "time": "10:29",
+      "status": "read"
+    }
+  ],
+  "assets": {}
 }

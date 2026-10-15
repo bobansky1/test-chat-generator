@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Landing from './Landing';
-import Blog from './Blog';
-import {applySeo} from './seo';
+import App from './App';
 import './styles.css';
-const App=React.lazy(()=>import('./App'));
-const path=location.pathname;
-applySeo(path);
-const page=<React.StrictMode>{path.startsWith('/app')?<React.Suspense fallback={<p style={{padding:30}}>Открываем редактор…</p>}><App /></React.Suspense>:path.startsWith('/blog')?<Blog slug={path.split('/')[2]}/>:path==='/'?<Landing/>:<Blog slug="not-found"/>}</React.StrictMode>;
-const root=document.getElementById('root')!;
-if(root.hasChildNodes())ReactDOM.hydrateRoot(root,page);else ReactDOM.createRoot(root).render(page);
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode><App /></React.StrictMode>,
+);
